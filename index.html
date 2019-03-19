@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <!-- <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script> -->
+    <title>Pet for You</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header">
+      <div id="logo">
+        <p>PET FOR YOU</p>
+      </div>
+      <div id="search" class="pos">
+        <i class="fas fa-search"></i>
+      </div>
+      <div id="register_icon" class="pos">
+        <i class="fas fa-user"></i>
+      </div>
+      <div id="register" class="pos">
+        <p>Sign In | Register</p>
+      </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+      <!-- <nav class="navbar navbar-expand-lg"> -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav-fill">
+          <li class="nav-item main_menu">
+            <a class="nav-link" href="#">Adoption</a>
+            <ul class="sub_menu">
+              <li><a class="nav-link" href="#">Dog Adoption</a></li>
+              <li><a class="nav-link" href="#">Cat Adoption</a></li>
+              <li><a class="nav-link" href="#">Other Adoption</a></li>
+              <li><a class="nav-link" href="#">Pet Adoption Information</a></li>
+            </ul>
+          </li>
+          <li class="nav-item main_menu">
+            <a class="nav-link" href="#">Dog Care</a>
+            <ul class="sub_menu">
+              <li><a class="nav-link" href="#">Dog Breeds</a></li>
+              <li><a class="nav-link" href="#">Bringing a dog home</a></li>
+              <li><a class="nav-link" href="#">Dog Training</a></li>
+              <li><a class="nav-link" href="#">Dog Problems</a></li>
+              <li><a class="nav-link" href="#">Dog Grooming</a></li>
+            </ul>
+          </li>
+          <li class="nav-item main_menu">
+            <a class="nav-link" href="#">Cat Care</a>
+            <ul class="sub_menu">
+              <li><a class="nav-link" href="#">Cat Breeds</a></li>
+              <li><a class="nav-link" href="#">Bringing a Cat Home</a></li>
+              <li><a class="nav-link" href="#">Cat Behavior & Training</a></li>
+              <li><a class="nav-link" href="#">Cat Problems</a></li>
+              <li><a class="nav-link" href="#">Cat Grooming</a></li>
+            </ul>
+          </li>
+          <li class="nav-item main_menu">
+            <a class="nav-link" href="#">Lost And Found</a>
+            <ul class="sub_menu">
+              <li><a class="nav-link" href="#">Lost Dog Search</a></li>
+              <li><a class="nav-link" href="#">Lost Cat Search</a></li>
+              <li><a class="nav-link" href="#">Found a Pet</a></li>
+              <li><a class="nav-link" href="#">Animal Shelters</a></li>
+            </ul>
+          </li>
+          <li id="donate" class="nav-item main_menu">
+            <a class="nav-link" href="#">Donate</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- MAIN IMAGES -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="images/img01_2.jpg"
+            alt="First slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="images/img02_2.jpg"
+            alt="Second slide"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="images/img03_2.jpg"
+            alt="Third slide"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- Cards -->
+
+    <div id="cards" class="container-fluid">
+      <h3>Pets Near You</h3>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <img src="images/card01.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-info">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/card02.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-info">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/card03.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-info">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Article 01 -->
+    <div id="article_01" class="container-fluid">
+      <h2>The Experts & Tools You Need to Find the Perfect Pet</h2>
+      <!-- <p>Have you addressed what type of pet personality you are looking for? Wait a second, did we just say personality, and not breed? Yes, that is right. Finding the ideal pet for yourself or family should start with an understanding of the ideal pet personality. Consider this, do you need a dog that is low key and good with kids, or are you looking for an energetic pal who is into trail running? Perhaps a cat that will get along well with others is what you need. The dog rescues and cat rescues that post hundreds of local pets near you are experts at matching you with a dog or cat who will love the life you can provide. This is why so many people are realizing focusing on dog adoption and cat adoption from a rescue is the ideal pet search process. Best of all, our website has a feature called "New Pet Alert." Simply tell us what you are looking for and we will e-mail you when that perfect pet is available! So even if you've made the commitment to adopt a puppy or adopt a kitten, we will e-mail you immediately when we know of a local little furry fellow who is in need of a new home!</p> -->
+      <a href="#"><span id="btn">Read More</span></a>
+    </div>
+
+    <!-- Article 02 -->
+    <div id="article_02">
+      <div class="blog-card">
+        <div class="meta">
+          <div
+            class="photo"
+            style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)"
+          ></div>
+          <ul class="details">
+            <li class="author"><a href="#">John Doe</a></li>
+            <li class="date">Aug. 24, 2015</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Learning to Code</h1>
+          <h2>Opening a door to the future</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum
+            dolorum architecto obcaecati enim dicta praesentium, quam nobis!
+            Neque ad aliquam facilis numquam. Veritatis, sit.
+          </p>
+          <p class="read-more">
+            <a href="#">Read More</a>
+          </p>
+        </div>
+      </div>
+      <div class="blog-card alt">
+        <div class="meta">
+          <div
+            class="photo"
+            style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)"
+          ></div>
+          <ul class="details">
+            <li class="author"><a href="#">Jane Doe</a></li>
+            <li class="date">July. 15, 2015</li>
+            <li class="tags">
+              <ul>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="description">
+          <h1>Mastering the Language</h1>
+          <h2>Java is not the same as JavaScript</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum
+            dolorum architecto obcaecati enim dicta praesentium, quam nobis!
+            Neque ad aliquam facilis numquam. Veritatis, sit.
+          </p>
+          <p class="read-more">
+            <a href="#">Read More</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
